@@ -28,9 +28,9 @@ attr_accessor :side1, :side2, :side3
       rescue TriangleError => error
           puts error.message
       end
-    
     end
   end
+  
   class TriangleError < StandardError
     def message
       puts Triangle::TriangleError
