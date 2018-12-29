@@ -11,6 +11,7 @@ attr_accessor :side1, :side2, :side3
   
   class TriangleError < StandardError
     def message
+      
     end
   end
   
@@ -31,7 +32,7 @@ attr_accessor :side1, :side2, :side3
       begin
         raise TriangleError
       rescue TriangleError => error
-          # puts error.message
+          puts error.message
       end
     
     end
