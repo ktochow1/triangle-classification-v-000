@@ -33,8 +33,6 @@ attr_accessor :side1, :side2, :side3
       :scalene
     elsif side1 == side2 && side2 == side3
       :equilateral
-      
-     
     end
   end
   
