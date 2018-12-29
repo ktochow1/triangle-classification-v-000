@@ -14,7 +14,7 @@ attr_accessor :side1, :side2, :side3
       begin
       raise TriangleError
       end
-    elsif side1 == side2 && side2 != side3
+    elsif side1 == side2 && side2 < side3
       begin
       raise TriangleError
       end
