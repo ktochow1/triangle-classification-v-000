@@ -6,14 +6,8 @@ attr_accessor :side1, :side2, :side3
     @side1 = side1
     @side2 = side2
     @side3 = side3
-    
   end
   
-  class TriangleError < StandardError
-    def message
-      puts Triangle::TriangleError
-    end
-  end
   
   def kind
     if side1 == side2 && side2 == side3
@@ -35,6 +29,11 @@ attr_accessor :side1, :side2, :side3
           puts error.message
       end
     
+    end
+  end
+  class TriangleError < StandardError
+    def message
+      puts Triangle::TriangleError
     end
   end
 
