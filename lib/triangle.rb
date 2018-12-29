@@ -22,12 +22,6 @@ attr_accessor :side1, :side2, :side3
       :scalene
     elsif side1 <= 0 && side2 <= 0 && side3 <= 0 
       raise TriangleError
-      
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
     end
   end
   
