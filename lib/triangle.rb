@@ -26,10 +26,7 @@ attr_accessor :side1, :side2, :side3
     elsif side1 == side2 && side2 == side3
       :equilateral
       
-      begin
-      raise TriangleError
-      rescue TriangleError => error
-    end
+     
     end
   end
   
